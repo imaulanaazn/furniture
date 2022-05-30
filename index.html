@@ -12,11 +12,70 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="src/styles/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <p>Nothing to see here...</p>
-  <!-- Project -->
+  
+ <header class="w-screen px-12">
+  <div class="secondary_menu w-full border-b-2 border-solid bordee-slate-300">
+    <ul class="w-full flex justify-between py-2">
+      <li>
+        <ul class="flex">
+           <li><a href="#" class="text-xs text-slate-500">ABOUT</li></a>
+           <li><a href="#" class="text-xs text-slate-500 ml-4">CONTACT</li></a>
+        </ul>
+      </li>
+      <li>
+        <ul class="flex">
+           <li><a href="#" class="text-xs text-slate-500 pr-2">SIGNIN</a></li>
+           <li><a href="#" class="text-xs text-slate-500 pl-2 border-l border-solid border-slate-300">SIGNUP</a></li>
+        </ul>
+      </li>
+    </ul> 
+  </div>
+  
+  <nav class="py-7 flex justify-between items-center">
+    <div class="logo">
+      <a href="#" class="flex items-center">
+      <img src="src/images/logo.png" width="45" alt="logo">
+      <p class="justify-self-end font-bold text-4xl ml-4">ltar</p>
+      </a>
+    </div>
+    
+    <div class="main_menu">
+      <ul class="flex">
+        <li class="mx-4 text-sm text-slate-600"><a href="#">CATEGORY</a></li>
+        <li class="mx-4 text-sm text-slate-600"><a href="#">SHOP</a></li>
+        <li class="mx-4 text-sm text-slate-600"><a href="#">FORSALE</a></li>
+      </ul>
+    </div>
+    
+    <div class="user_cart w-32 flex justify-between items-center">
+      <img src="src/images/heart.png" class="w-7 h-7" alt="heart">
+      <div class="cart_icon flex items-center">
+        <img src="src/images/shopping-cart.png" class="w-5 h-5" alt="cart">
+        <p class="text-sm mx-1">CART</p>
+        <div class="user_cart_total rounded-full bg-amber-500 w-6 h-6 flex items-center justify-center">
+          <p class="text-white text-xs">5</p>
+         </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="showcase relative w-screen h-96 bg-slate-400">
+    <div class="left-side absolute w-1/2 h-full bg-orange-100 top-0 left-0"></div>
+    <div class="right-side absolute w-1/2 h-full bg-orange-50 top-0 left-1/2"></div>
+    <img src="src/images/lamp_showcase_bg.png" class="w-24 absolute top-0 left-1/4 -translate-x-1/2" alt="lamp">
+    <img src="src/images/sofa_showcase_bg.png" class="w-80 absolute bottom-0 left-3/4 -translate-x-1/2" alt="lamp">
+  <div class="text text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 zindex-1">
+    <h1 class="title text-slate-600 font-extrabold text-2xl text-center">Comfy Furniture for Your Home</h1>
+    <p class="text-lg text-slate-600 mt-2">Discover the most beautiful furniture</p>
+    <button class="mt-10 text-slate-600 bg-white p-1 rounded">Shop Now ></button>
+  </div>
+</section>
+  
   <script src="main.js"></script>
 </body>
 </html>
