@@ -15,7 +15,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   
  <header class="w-screen px-12">
   <div class="secondary_menu w-full border-b-2 border-solid bordee-slate-300">
@@ -45,14 +45,14 @@
     
     <div class="main_menu">
       <ul class="flex">
-        <li class="mx-4 text-sm text-slate-600"><a href="#">CATEGORY</a></li>
+        <li class="mx-4 text-sm text-slate-600"><a href="#">Home</a></li>
         <li class="mx-4 text-sm text-slate-600"><a href="#">SHOP</a></li>
         <li class="mx-4 text-sm text-slate-600"><a href="#">FORSALE</a></li>
       </ul>
     </div>
     
     <div class="user_cart w-32 flex justify-between items-center">
-      <img src="src/images/heart.png" class="w-7 h-7" alt="heart">
+      <img src="src/images/heart.png" class="w-6 h-6" alt="heart">
       <div class="cart_icon flex items-center">
         <img src="src/images/shopping-cart.png" class="w-5 h-5" alt="cart">
         <p class="text-sm mx-1">CART</p>
@@ -71,12 +71,143 @@
     <img src="src/images/lamp_showcase_bg.png" class="w-24 absolute top-0 left-1/4 -translate-x-1/2" alt="lamp">
     <img src="src/images/sofa_showcase_bg.png" class="w-80 absolute bottom-0 left-3/4 -translate-x-1/2" alt="sofa">
   <div class="text text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 zindex-1">
-    <h1 class="title text-slate-600 font-extrabold text-2xl text-center">Comfy Furniture for Your Home</h1>
-    <p class="text-lg text-slate-600 mt-2">Discover the most beautiful furniture</p>
-    <button class="mt-10 text-sm font-bold text-slate-600 bg-white py-1 px-3 rounded-full">Shop Now ></button>
+    <h1 class="title text-slate-700 font-extrabold text-2xl text-center">Comfy Furniture for Your Home</h1>
+    <p class="text-lg text-slate-700 mt-2">Discover the most beautiful furniture</p>
+    <button class="mt-10 text-sm font-bold text-orange-800 bg-white py-2 px-3 rounded-full">Shop Now ></button>
   </div>
 </section>
+
+<section class="best_selling h-96 flex py-8">
+  <div class="produc_desc w-1/2 text-center">
+    <h2 class="text-orange-800 font-bold text-sm">Best Selling</h2>
+    <h1 class="text-slate-700 font-extrabold text-2xl my-4">White pale vase</h1>
+    <p class="w-3/4 text-sm text-slate-700 m-auto">This vase has been sold for over 130 in year making this thing as the most wanted vase in our store, this vase is made by an artist based on canada with experience in this field for over 5 year since he start to make vase in 2007, with the cheap price and high quality product you will not disapointed for buying this vase</p>
+    <p class="font-extrabold text-slate-700 my-4">$110</p>
+    <button class="rounded text-xs font-bold  text-orange-800 bg-orange-200 py-2 px-4">Buy Now</button>
+  </div>
+  <figure class="flex-1 flex items-center justify-center h-full ">
+    <div class="img_wrapper w-1/2 h-full flex items-center justify-center margin-auto rounded-b-full bg-orange-200" >
+      <img src="src/images/white_pale_vase.png" class="h-64 " alt="white vase">      
+    </div>
+  </figure>
+</section>
+
+<section class="best_selling h-96 flex py-8">
+  <figure class="flex-1 flex items-center justify-center h-full ">
+    <div class="img_wrapper w-1/2 h-full flex items-center justify-center margin-auto rounded-t-full bg-orange-100" >
+      <img src="src/images/floor_lamp.png" class="h-64 " alt="white vase">      
+    </div>
+  </figure>
+  <div class="produc_desc w-1/2 text-center">
+    <h2 class="text-orange-800 font-bold text-sm">For Your Things</h2>
+    <h1 class="text-slate-700 font-extrabold text-2xl my-4">Floor Lamp</h1>
+    <p class="w-3/4 text-sm text-slate-700 m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nam, animi omnis voluptas saepe amet expedita at qui sit facilis reiciendis ratione? Quis, animi nam. Doloribus recusandae ipsum dicta quas optio debitis at quibusdam rerum a accusamus!</p>
+    <p class="font-extrabold text-slate-700 my-4">$50</p>
+    <button class="rounded text-xs font-bold  text-orange-800 bg-orange-100 py-2 px-4">Buy Now</button>
+  </div>
+</section>
+
+<section class="home_decor px-12 text-center">
+  <h1 class="text-orange-800 text-normal font-bold text-center my-4">Modern Home Decor Essentials</h1>
+  <p class="text-sm font-normal text-slate-700 text-center w-3/4 mb-10 mx-auto">Lorem ipsum iat optio totam mollitia atque dignissimos eos quaerat, nulla reiciendis, in explicabo facere cupiditate facilis eligendi quibusdam amet, commodi hic iste! Assumenda!</p>
+  <div class="grid grid_wrapper grid-cols-4 grid-rows-2 gap-2 justify-content-center">
+    <div class="card bg-orange-100 flex items-center justify-center h-96 w-full">
+      <div class="card_item flex flex-col text-center w-3/4 h-3/4">
+        <img src="src/images/black_vase_decor.png" class="w-20 m-auto" alt="">
+        <h3 class="mt-4">Vase bunga gelap</h3>
+        <h4 class="my-3">$40</h4>
+        <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
+      </div>
+    </div>
+    <div class="card bg-orange-100 flex items-center justify-center h-96 w-full">
+      <div class="card_item flex flex-col text-center w-3/4 h-3/4">
+        <img src="src/images/flamingo_decor.png" class="w-20 m-auto" alt="">
+        <h3 class="mt-4">Flamingo Statue</h3>
+        <h4 class="my-3">$70</h4>
+        <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
+      </div>
+    </div>
+    <div class="card bg-orange-100 flex items-center justify-center h-96 w-full">
+      <div class="card_item flex flex-col text-center w-3/4 h-3/4">
+        <img src="src/images/gold_vase_decor.png" class="w-8 m-auto" alt="">
+        <h3 class="mt-4">Vase Emas</h3>
+        <h4 class="my-3">$76</h4>
+        <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
+      </div>
+    </div>
+    <div class="card bg-orange-100 flex items-center justify-center h-96 w-full">
+      <div class="card_item flex flex-col text-center w-3/4 h-3/4">
+        <img src="src/images/plant_decor.png" class="w-20 m-auto" alt="">
+        <h3 class="mt-4">Plant</h3>
+        <h4 class="my-3">$43</h4>
+        <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
+      </div>
+    </div>
+    <div class="card bg-orange-100 flex items-center justify-center h-96 w-full col-span-2">
+    <div class="card_item flex flex-col text-center w-3/4 h-3/4">
+      <img src="src/images/table_decor.png" class="w-45 m-auto" alt="">
+      <h3 class="mt-4">Table decoration</h3>
+      <h4 class="my-3">$210</h4>
+      <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
+    </div>
+    </div>
+    <div class="card bg-orange-100 flex items-center justify-center h-96 w-full">
+      <div class="card_item flex flex-col text-center w-3/4 h-3/4">
+        <img src="src/images/vase_decor.png" class="w-20 m-auto" alt="">
+        <h3 class="mt-4">Vase Dengan Motif</h3>
+        <h4 class="my-3">$221</h4>
+        <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
+      </div>
+    </div>
+    <div class="card bg-orange-100 flex items-center justify-center h-96">
+      <div class="card_item flex flex-col text-center w-3/4 h-3/4">
+        <img src="src/images/welcome_home_decor.png" class="w-20 m-auto" alt="">
+        <h3 class="mt-4">Welcome Greetings</h3>
+        <h4 class="my-3">$21</h4>
+        <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
+      </div>
+    </div>
+  </div>
+  <button class="rounded text-xs font-bold  text-orange-800 bg-orange-100 py-2 px-4 my-6">view all</button>
+</section>
   
+<footer class="grid grid-cols-4 gap-x-6 m-12">
+  <div class="subs ml-auto">
+    <h1 class="font-bold text-slate-700 mb-4" >Subscribe</h1>
+    <p class="text-sm">Subscribe to our newsletter to be the first to hear about new arrivals, sales and special offers!</p>
+    <input type="email" class="border-solid border text-sm border-slate-400 rounded mt-4 py-2 px-4" placeholder="Enter your email">
+  </div>
+  <div class="menu mx-auto">
+    <h1 class="font-bold text-slate-700 mb-4" >Menu</h1>
+    <ul>
+      <li><a href="#" class="text-sm">Home</a></li>
+      <li><a href="#" class="text-sm">Shop</a></li>
+      <li><a href="#" class="text-sm">Forsale</a></li>
+      <li><a href="#" class="text-sm">About</a></li>
+      <li><a href="#" class="text-sm">Contact</a></li>
+      <li><a href="#" class="text-sm">Signin</a></li>
+      <li><a href="#" class="text-sm">Signup</a></li>
+    </ul>
+  </div>
+  <div class="info mx-auto">
+    <h1 class="font-bold text-slate-700 mb-4" >Information</h1>
+    <ul>
+      <li><a href="#" class="text-sm">About Us</a></li>
+      <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+      <li><a href="#" class="text-sm">User's Guide</a></li>
+      <li><a href="#" class="text-sm">Support Center</a></li>
+    </ul>
+  </div>
+  <div class="social_media mr-auto">
+    <h1 class="font-bold text-slate-700 mb-4" >Social Media</h1>
+    <ul>
+      <li><a href="#" class="text-sm">Twitter</a></li>
+      <li><a href="#" class="text-sm">Facebook</a></li>
+      <li><a href="#" class="text-sm">Telegram</a></li>
+      <li><a href="#" class="text-sm">Discord</a></li>
+    </ul>
+  </div>
+</footer>
   <script src="main.js"></script>
 </body>
 </html>
