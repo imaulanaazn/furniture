@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Sign-form</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<body class="bg-orange-100 w-screen h-screen flex items-center">
+    <div class="container bg-slate-400 w-4/6 h-4/5 m-auto rounded-lg overflow-x-hidden relative">
+        <div class="logo absolute top-4 left-4 z-10 flex items-end">
+            <img src="../src/images/logo.png" class="w-6" alt="">
+            <p class="text-2xl font-bold">ltar</p>
+        </div>
+       <main class="bg-white h-full w-3/5 p-10 top-0 left-0 flex flex-col absolute items-center justify-center">
+        <h1 class="font-bold text-3xl text-orange-300">Sign in to Altar</h1>
+
+            <input type="email" placeholder="Enter your email" class="bg-slate-200 rounded text-xs h-8 w-72 px-3 mb-1 mt-6 text-slate-600">
+            <input type="password" placeholder="Enter you passord" class="bg-slate-200 rounded text-xs h-8 w-72 px-3">
+            <p class="text-sm mt-3"><a href="#" class="underline underline-offset-8 decoration-1 decoration-slate-500 hover:decoration-slate-900">Forgot your password?</a></p>
+
+        <div class="socmed flex justify-between w-24 mt-6 ">
+          
+                <img src="../src/icons/google.svg" class="w-5" alt="google">
+
+
+                <img src="../src/icons/facebook.svg" class="w-5" alt="facebook">
+
+        
+                <img src="../src/icons/linkedin.svg" class="w-5" alt="linkedin">
+
+        </div>
+        <p class="text-xs text-slate-500 mt-3 mb-6">Or use you social media account</p>
+        <button class="bg-orange-300 h-9 w-40 rounded-full text-white font-normal">SIGN IN</button>
+       </main>
+       <aside class="bg-orange-300 h-full w-2/5 absolute right-0 top-0 flex flex-col items-center justify-center px-12 text-center">
+        <h1 class="font-bold text-3xl text-white">Welcome</h1>
+        <p class="text-sm text-white my-5">Start your journey with us by signing up with your personal info</p>
+        <button class="secondary-btn border border-white border solid rounded-full h-9 w-40 rounded-full text-white font-normal">SIGN UP</button>
+       </aside>
+   </div>
+
+   <script src="../src/scripts/sign-form.js"></script>
+</body>
+</html>
