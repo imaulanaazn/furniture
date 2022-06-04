@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../src/styles/shop.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  
+
+</head>
+<body class="overflow-x-hidden">
+    <header class="w-full px-12 absolute top-0 left-0 z-10 bg-white">
+      <div class="secondary_menu w-full border-b-2 border-solid bordee-slate-300">
+        <ul class="w-full flex justify-between py-2">
+          <li>
+            <ul class="flex">
+               <li><a href="about.html" class="text-xs text-slate-500">ABOUT</li></a>
+               <li><a href="#contact" class="text-xs text-slate-500 ml-4">CONTACT</li></a>
+            </ul>
+          </li>
+          <li>
+            <ul class="flex">
+               <li><a href="sign-form.html" class="text-xs text-slate-500 pr-2">SIGNIN</a></li>
+               <li><a href="sign-form.html" class="text-xs text-slate-500 pl-2 border-l border-solid border-slate-300">SIGNUP</a></li>
+            </ul>
+          </li>
+        </ul> 
+      </div>
+        
+        <nav class="py-7 flex justify-between items-center">
+          <div class="logo">
+            <a href="#" class="flex items-center">
+            <img src="../src/images/logo.png" width="45" alt="logo">
+            <p class="justify-self-end font-bold text-4xl ml-4">ltar</p>
+            </a>
+          </div>
+          
+          <div class="main_menu">
+            <ul class="flex">
+              <li class="mx-4 text-sm text-slate-600"><a href="../index.html">HOME</a></li>
+              <li class="mx-4 text-sm text-slate-600"><a href="shop.html">SHOP</a></li>
+              <li class="mx-4 text-sm text-slate-600"><a href="#">FORSALE</a></li>
+            </ul>
+          </div>
+          
+          <div class="user_cart w-32 flex justify-between items-center">
+            <img src="../src/images/heart.png" class="w-6 h-6" alt="heart">
+            <div class="cart_icon flex items-center">
+              <img src="../src/images/shopping-cart.png" class="w-5 h-5" alt="cart">
+              <p class="text-sm mx-1">CART</p>
+              <div class="user_cart_total rounded-full bg-amber-500 w-6 h-6 flex items-center justify-center">
+                <p class="text-white text-xs">5</p>
+               </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <section class="showcase relative w-full h-screen bg-slate-400 bg-orange-200">
+        <img src="../src/images/sofa_showcase_bg.png" class="w-96 absolute bottom-0 left-1/2 -translate-x-1/2" alt="sofa">
+      <div class="text text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 zindex-1">
+        <h1 class="title text-slate-800 font-extrabold text-2xl text-center">Comfy Furniture for Your Home</h1>
+        <p class="text-lg text-slate-800 mt-2">Discover the most beautiful furniture</p>
+      </div>
+    </section>
+ 
+    <section class="top_rated w-full px-12 my-28">
+      <h1 class="font-bold text-2xl my-8">Top Rated Product</h1>
+        <div class="swiper mySwiper w-full h-56">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex items-center justify-center bg-slate-200 ">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover " alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Dark gray sofa</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200 ">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover " alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">aesthetic high chair</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200 ">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover " alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Beautiful lamp</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200 ">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover " alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Cute litle cactus</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200 ">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover " alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Painting</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200 ">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover " alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Comfortable bed</button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="our_product w-full px-12 text-center">
+      <h1 class="text-left font-bold text-2xl mb-7">Our Product</h1>
+      <div class="product_navbar w-full flex justify-between ">
+        <ul class="flex w-80 justify-between">
+          <li class="all-btn hover:cursor-pointer">All product</li>
+          <li class="chair-btn hover:cursor-pointer">Chair</li>
+          <li class="table-btn hover:cursor-pointer">Table</li>
+          <li class="bed-btn hover:cursor-pointer">Bed</li>
+          <li class="decor-btn hover:cursor-pointer">Decorative</li>
+        </ul>
+        <button>Filter</button>
+      </div>
+      <div class="products_wrapper my-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> <span class="discount">$200</span> <s class="text-slate-400">$230</s></p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+        <div class="item h-96 w-full  overflow-hidden">
+          <div class="thumb relative w-full h-5/6 bg-slate-200">
+            <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 transition-all duration-500 text-sm py-2 px-3 border border-solid border-slate-700 ">view product</button>
+          </div>
+          <div class="product_detail flex justify-between items-center w-full h-1/6">
+            <p class="text-left">Flower <br> $230</p>
+            <div class="stars flex w-1/3 justify-evenly">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+              <img src="../src/icons/star.svg" alt="stars icons" width="15">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="text-sm py-1 px-2 border border-solid border-slate-700">view more</button>
+    </section>
+
+    <section class="category w-full px-12 my-28">
+      <h1 class="font-bold text-2xl my-8">Top Category</h1>
+        <div class="swiper mySwiper w-full h-56">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex items-center justify-center bg-slate-200">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover" alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Comfortable sofa</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover" alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Comfortable chair</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover" alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Beautiful lamp</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover" alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Home decoration</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover" alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">House element</button>
+            </div>
+            <div class="swiper-slide flex items-center justify-center bg-slate-200">
+              <img src="../src/images/logo.png" class="w-full h-full object-cover" alt="">
+              <button class="absolute text-sm py-2 px-3 border border-solid border-slate-700">Comfy bed</button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class=" w-full px-12 my-24">
+      <div class="container flex h-80 bg-slate-200">
+        <div class="left-text w-1/2 flex flex-col items-center justify-center">
+          <h1 class="text-4xl font-bold">Discounted</h1>
+          <p class="text-lg tracking-widest">Wonder sofa</p>
+          <div class="h-12 w-20 gap-3 text-center discounted_persen grid grid-cols-2 grid-rows-3 items-center">
+            <h2 class="col-start-1 col-end-2 row-start-1 row-end-3 text-5xl font-bold text-red-600">25</h2>
+            <p class="col-start-2 col-end-3 row-start-1 row-end-3 text-normal mb-4">%</p>
+            <p class="col-start-2 col-end-3 row-start-2 row-end-3 text-normal">off</p>
+            <p class="col-start-1 col-end-3 row-start-3 row-end-4 text-xl text-left font-bold ">On Sale</p>
+          </div>
+        </div>
+        <div class="image w-1/2 flex items-center justify-center border-l border-slate-400 border-solid">
+        <img src="../src/images/sofa_showcase_bg.png" class="w-3/4" alt="">
+      </div>
+      </div>
+    </section>
+
+    <section class="latest_product px-12">
+      <h1 class="text-left font-bold text-2xl mb-7">Newest added Product</h1>
+      <div class="products_wrapper grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-3">
+        <div class="item h-64 w-full bg-slate-200 min-w-min relative">
+          <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover">
+          <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm py-2 px-3 border border-solid border-slate-700">view product</button>
+        </div>
+        <div class="item h-64 w-full bg-slate-200 min-w-min relative">
+          <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover">
+          <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm py-2 px-3 border border-solid border-slate-700">view product</button>
+        </div>
+        <div class="item h-64 w-full bg-slate-200 min-w-min relative">
+          <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover">
+          <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm py-2 px-3 border border-solid border-slate-700">view product</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="grid grid-cols-4 gap-x-6 m-12 pl-40">
+      <div class="subs ml-auto">
+        <h1 class="font-bold text-slate-700 mb-4">Subscribe</h1>
+        <p class="text-sm">Subscribe to our newsletter to be the first to hear about new arrivals, sales and special offers!</p>
+        <input type="email" class="border-solid border text-sm border-slate-700 rounded mt-4 py-2 px-4 " placeholder="Enter your email">
+        <button class="rounded text-xs font-bold border border-slate-700 text-slate-700 border-solid hover:bg-orange-100 py-2 px-4 my-3">Send</button>
+      </div>
+      <div class="menu mx-auto">
+        <h1 class="font-bold text-slate-700 mb-4">Menu</h1>
+        <ul>
+          <li><a href="../index.html" class="text-sm">Home</a></li>
+          <li><a href="shop.html" class="text-sm">Shop</a></li>
+          <li><a href="#" class="text-sm">Forsale</a></li>
+          <li><a href="about.html" class="text-sm">About</a></li>
+          <li><a href="#contact" class="text-sm">Contact</a></li>
+          <li><a href="sign-form.html" class="text-sm">Signin</a></li>
+          <li><a href="sign-form.html" class="text-sm">Signup</a></li>
+        </ul>
+      </div>
+      <div class="info mx-auto">
+        <h1 class="font-bold text-slate-700 mb-4">Information</h1>
+        <ul>
+          <li><a href="#" class="text-sm">About Us</a></li>
+          <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+          <li><a href="#" class="text-sm">User's Guide</a></li>
+          <li><a href="#" class="text-sm">Support Center</a></li>
+        </ul>
+      </div>
+      <div class="social_media mr-auto" id="contact">
+        <h1 class="font-bold text-slate-700 mb-4">Social Media</h1>
+        <ul>
+          <li><a href="#" class="text-sm">Twitter</a></li>
+          <li><a href="#" class="text-sm">Facebook</a></li>
+          <li><a href="#" class="text-sm">Telegram</a></li>
+          <li><a href="#" class="text-sm">Discord</a></li>
+          <li><a href="#" class="text-sm">Telephone</a></li>
+          <li><a href="#" class="text-sm">Whatsapp</a></li>
+          <li><a href="#" class="text-sm">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+   
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../src/scripts/shop.js"></script>
+</body>

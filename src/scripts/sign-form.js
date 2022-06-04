@@ -76,7 +76,7 @@ asideBtn.addEventListener('click',()=>{
         },260)
         asideBtn.textContent = "SIGN UP";
         isSignUp = true;
-    }
+    } 
     
 })
 
