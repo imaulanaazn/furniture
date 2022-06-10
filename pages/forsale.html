@@ -20,117 +20,78 @@
 </head>
 <body>
 
-    <header class="w-full px-12 top-0 left-0 z-10 bg-white">
-        <div class="secondary_menu w-full border-b-2 border-solid bordee-slate-300">
-          <ul class="w-full flex justify-between py-2">
-            <li>
-              <ul class="flex">
-                 <li><a href="about.html" class="text-xs text-slate-500">ABOUT</li></a>
-                 <li><a href="#contact" class="text-xs text-slate-500 ml-4">CONTACT</li></a>
-              </ul>
-            </li>
-            <li>
-              <ul class="flex">
-                 <li><a href="sign-form.html" class="text-xs text-slate-500 pr-2">SIGNIN</a></li>
-                 <li><a href="sign-form.html" class="text-xs text-slate-500 pl-2 border-l border-solid border-slate-300">SIGNUP</a></li>
-              </ul>
-            </li>
-          </ul> 
-        </div>
+  <header class="w-full lg:px-12 md:px-10 md:pt-5 px-4 pt-3 top-0 left-0 z-10 bg-white">
+    <div class="secondary_menu w-full border-b border-solid border-slate-600">
+      <ul class="w-full flex justify-between py-2">
+        <li>
+          <ul class="flex">
+             <li><a href="pages/about.html" class="text-xs lg:text-xs  md:text-base text-slate-500">ABOUT</li></a>
+             <li><a href="#contact" class="text-xs lg:text-xs  md:text-base text-slate-500 ml-4">CONTACT</li></a>
+          </ul>
+        </li>
+        <li>
+          <ul class="flex">
+             <li><a href="/pages/sign-form.html" class="text-xs lg:text-xs  md:text-base text-slate-500 pr-2">SIGNIN</a></li>
+             <li><a href="/pages/sign-form.html" class="text-xs lg:text-xs  md:text-base text-slate-500 pl-2 border-l border-solid border-slate-700">SIGNUP</a></li>
+          </ul>
+        </li>
+      </ul> 
+    </div>
+    
+    <nav class="lg:py-7 py-4 flex justify-between items-center">
+      <div class="logo">
+        <a href="#" class="flex items-center">
+        <img src="../src/images/logo.png" class="md:w-10 w-6" alt="logo">
+        <p class="justify-self-end font-bold md:text-4xl  text-xl ml-1">ltar</p>
+        </a>
+      </div>
+      
+      <div class="main_menu">
+        <ul class="flex">
+          <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 hidden lg:block md:block"><a href="#">HOME</a></li>
+          <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 hidden lg:block md:block"><a href="pages/shop.html">SHOP</a></li>
+          <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 hidden lg:block md:block"><a href="pages/forsale.html">FORSALE</a></li>
+          <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 lg:hidden md:hidden"><a href="pages/forsale.html">MENU</a></li>
           
-          <nav class="py-7 flex justify-between items-center">
-            <div class="logo">
-              <a href="#" class="flex items-center">
-              <img src="../src/images/logo.png" width="45" alt="logo">
-              <p class="justify-self-end font-bold text-4xl ml-4">ltar</p>
-              </a>
+        </ul>
+      </div>
+      
+      <div class="user_cart md:w-32 w-30 flex justify-between items-center">
+        <img src="../src/images/heart.png" class="w-5 h-5 lg:w-5 lg:h-5 md:h-7 md:w-7" alt="heart">
+        <a href="pages/user-cart.html">
+          <div class="cart_icon flex items-center">
+            <img src="../src/images/shopping-cart.png" class="lg:w-4 lg:h-4 md:h-6 md:w-6 w-4 h-4" alt="cart">
+            <p class="text-sm mx-1">CART</p>
+            <div class="user_cart_total rounded-full bg-amber-500 w-5 h-5 lg:w-5 lg:h-5 md:h-7 md:w-7 flex items-center justify-center">
+              <p class="text-white text-xs">5</p>
             </div>
-            
-            <div class="main_menu">
-              <ul class="flex">
-                <li class="mx-4 text-sm text-slate-600"><a href="../index.html">HOME</a></li>
-                <li class="mx-4 text-sm text-slate-600"><a href="shop.html">SHOP</a></li>
-                <li class="mx-4 text-sm text-slate-600"><a href="#">FORSALE</a></li>
-              </ul>
-            </div>
-            
-            <div class="user_cart w-32 flex justify-between items-center">
-              <img src="../src/images/heart.png" class="w-6 h-6" alt="heart">
-              <a href="user-cart.html">
-                <div class="cart_icon flex items-center">
-                  <img src="../src/images/shopping-cart.png" class="w-5 h-5" alt="cart">
-                  <p class="text-sm mx-1">CART</p>
-                  <div class="user_cart_total rounded-full bg-amber-500 w-6 h-6 flex items-center justify-center">
-                    <p class="text-white text-xs">5</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </nav>
+          </div>
+        </a>
+      </div>
+    </nav>
   </header>
+  
 
     <div class="showcase-wrapper w-full h-96 my-10">
-        <div class="swiper mySwiper w-3/4 h-full">
+        <div class="swiper mySwiper lg:w-3/4 md:w-11/12 w-full h-full">
             <div class="swiper-wrapper">
               <div class="swiper-slide bg-stone-700 relative">
-                <div class="text absolute z-10 top-1/2 left-0 px-12 bg-orange-200 w-11/12 h-2/3 text-left flex flex-col items-start justify-center -translate-y-1/2">
-                  <h1 class="text-4xl font-semibold">Simple and modern</h1>
-                  <h2 class="text-8xl font-extrabold">furniture</h2>
-                  <button class="py-1 px-3 bg-stone-700 text-white text-base rounded mt-6">Order Now</button>
-                </div>
-                <div class="bg-circle w-96 h-96 bg-slate-200 rounded-full top-0 right-16  absolute">
-                </div>
-                <div class="bg-circle z-20 w-96 h-96 bg-slate-100 rounded-full top-0 right-0 absolute overflow-hidden">
-                  <img src="../src/images/discounted-item-1.jpg" class=" w-full h-full object-cover object-center" alt="">
-                </div>
-                <div class="discount z-20 rounded-full flex flex-col items-center justify-center bg-orange-200 absolute w-20 h-20 bg-slate-200 top-0 right-0">
-                  <h2 class="text-xl font-extrabold">50%</h2>
-                  <h2 class="text-lg font-light">OFF</h2> 
-                </div>
-                <h2 class="absolute bottom-5 left-12  text-sm font-normal text-white">$600 <s>$12000</s> </h2>
               </div>
 
               <div class="swiper-slide bg-gray-800 relative w-full h-full flex justify-start ">
-                <div class="text w-1/2 ml-12 h-full text-slate-200 flex flex-col items-start justify-center text-left">
-                  <h1 class="text-4xl font-semibold">Simple and modern</h1>
-                  <h2 class="text-8xl font-extrabold text-slate-100">furniture</h2>
-                  <p class="text-sm font-light ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At sit exercitationem distinctio sequi perspiciatis voluptatibus </p>
-                  <button class="py-1 px-3 bg-slate-100 text-gray-800 text-base rounded mt-6">Order Now</button>
-                </div>
-                <div class="thumb w-1/2 h-2/3 absolute top-1/2 -right-32 -translate-y-1/2 rounded-3xl skew-x-12 overflow-hidden">
-                  <img src="../src/images/discounted-item-2.jpg" class="w-full h-full object-cover -translate-x-12 -skew-x-12" alt="">
-                </div>
-                <div class="discount z-20 rounded-full flex flex-col items-center justify-center bg-orange-200 absolute w-20 h-20 bg-slate-200 top-0 right-0">
-                  <h2 class="text-xl font-extrabold">50%</h2>
-                  <h2 class="text-lg font-light">OFF</h2> 
-                </div>
-                <div class="decoration h-1/2 w-10 skew-x-12 rounded-lg  absolute -bottom-20 left-1/2 bg-slate-200"></div>
-                <div class="decoration w-5 h-5 top-0 right-40 border-2 border-solid border-slate-100 rotate-45"></div>
-                <h2 class="absolute bottom-5 left-12  text-sm font-normal text-white">$600 <s>$12000</s> </h2>
+        
               </div>
 
               <div class="swiper-slide relative w-full h-full">
-                  <div class="left-side w-3/5 pl-12 h-full bg-orange-200 flex flex-col items-start justify-center text-left">
-                    <h1 class="text-4xl font-semibold text-white">Simple and modern</h1>
-                    <h2 class="text-8xl font-extrabold text-slate-100">furniture</h2>
-                    <p class="text-sm font-light text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At sit exercitationem distinctio sequi perspiciatis voluptatibus </p>
-                    <button class="py-1 px-3 bg-slate-100 text-orange-200 text-base rounded mt-6">Order Now</button>
-                  </div>
-                  <div class="right-side absolute w-2/5 h-full bg-orange-100 relative">
-                    <img src="../src/images/discounted-item-3.jpg" class="w-full h-full object-cover object-center " alt="sofa">
-                  </div>      
-                  <div class="discount z-20 rounded-full flex flex-col items-center justify-center bg-orange-200 absolute w-20 h-20 bg-slate-200 top-0 right-0">
-                    <h2 class="text-xl font-extrabold">50%</h2>
-                    <h2 class="text-lg font-light">OFF</h2> 
-                  </div>            
+    
               </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </div>
 
-    <div class="discounted_product w-full px-12 text-center">
-      <div class="products_wrapper my-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
+    <div class="discounted_product w-full lg:px-12 px-6 text-center">
+      <div class="products_wrapper my-16 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
         <div class="item h-96 w-full  overflow-hidden">
           <div class="thumb relative w-full h-5/6 bg-slate-200">
             <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
@@ -231,46 +192,46 @@
     </div>
     
     
-    <footer class="grid grid-cols-4 gap-x-6 m-12 pl-40">
-        <div class="subs ml-auto">
-          <h1 class="font-bold text-slate-700 mb-4">Subscribe</h1>
-          <p class="text-sm">Subscribe to our newsletter to be the first to hear about new arrivals, sales and special offers!</p>
-          <input type="email" class="border-solid border text-sm border-slate-700 rounded mt-4 py-2 px-4 " placeholder="Enter your email">
-          <button class="rounded text-xs font-bold border border-slate-700 text-slate-700 border-solid hover:bg-orange-100 py-2 px-4 my-3">Send</button>
-        </div>
-        <div class="menu mx-auto">
-          <h1 class="font-bold text-slate-700 mb-4">Menu</h1>
-          <ul>
-            <li><a href="../index.html" class="text-sm">Home</a></li>
-            <li><a href="shop.html" class="text-sm">Shop</a></li>
-            <li><a href="#" class="text-sm">Forsale</a></li>
-            <li><a href="about.html" class="text-sm">About</a></li>
-            <li><a href="#contact" class="text-sm">Contact</a></li>
-            <li><a href="sign-form.html" class="text-sm">Signin</a></li>
-            <li><a href="sign-form.html" class="text-sm">Signup</a></li>
-          </ul>
-        </div>
-        <div class="info mx-auto">
-          <h1 class="font-bold text-slate-700 mb-4">Information</h1>
-          <ul>
-            <li><a href="#" class="text-sm">About Us</a></li>
-            <li><a href="#" class="text-sm">Terms & Conditions</a></li>
-            <li><a href="#" class="text-sm">User's Guide</a></li>
-            <li><a href="#" class="text-sm">Support Center</a></li>
-          </ul>
-        </div>
-        <div class="social_media mr-auto" id="contact">
-          <h1 class="font-bold text-slate-700 mb-4">Social Media</h1>
-          <ul>
-            <li><a href="#" class="text-sm">Twitter</a></li>
-            <li><a href="#" class="text-sm">Facebook</a></li>
-            <li><a href="#" class="text-sm">Telegram</a></li>
-            <li><a href="#" class="text-sm">Discord</a></li>
-            <li><a href="#" class="text-sm">Telephone</a></li>
-            <li><a href="#" class="text-sm">Whatsapp</a></li>
-            <li><a href="#" class="text-sm">Email</a></li>
-          </ul>
-        </div>
+    <footer class="grid lg:grid-cols-4 md:text-center grid-cols-2 gap-x-6 gap-y-6 lg:gap-y-0 m-6">
+      <div class="subs col-span-2 md:col-span-1 ml-auto flex flex-col">
+        <h1 class="font-bold  text-slate-700 mb-4" >Subscribe</h1>
+        <p class="text-sm">Subscribe to our newsletter to be the first to hear about new arrivals, sales and special offers!</p>
+        <input type="email" class="border-solid border text-sm border-slate-700 rounded mt-4 py-2 px-4 " placeholder="Enter your email">
+        <button class="rounded text-xs font-bold border border-solid bg-orange-100  text-orange-800 py-2 px-4 my-3">Send</button>
+      </div>
+      <div class="menu lg:mx-auto md:text-center md:mx-0 mr-auto">
+        <h1 class="font-bold text-slate-700 mb-4" >Menu</h1>
+        <ul>
+          <li><a href="#" class="text-sm">Home</a></li>
+          <li><a href="pages/shop.html" class="text-sm">Shop</a></li>
+          <li><a href="#" class="text-sm">Forsale</a></li>
+          <li><a href="pages/about.html" class="text-sm">About</a></li>
+          <li><a href="#contact" class="text-sm">Contact</a></li>
+          <li><a href="pages/sign-form.html" class="text-sm">Signin</a></li>
+          <li><a href="pages/sign-form.html" class="text-sm">Signup</a></li>
+        </ul>
+      </div>
+      <div class="info lg:mr-auto md:text-center md:mx-0 ml-auto">
+        <h1 class="font-bold text-slate-700 mb-4" >Information</h1>
+        <ul>
+          <li><a href="#" class="text-sm">About Us</a></li>
+          <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+          <li><a href="#" class="text-sm">User's Guide</a></li>
+          <li><a href="#" class="text-sm">Support Center</a></li>
+        </ul>
+      </div>
+      <div class="social_media lg:mx-auto md:text-center md:mx-0 mr-auto " id="contact">
+        <h1 class="font-bold text-slate-700 mb-4" >Social Media</h1>
+        <ul>
+          <li><a href="#" class="text-sm">Twitter</a></li>
+          <li><a href="#" class="text-sm">Facebook</a></li>
+          <li><a href="#" class="text-sm">Telegram</a></li>
+          <li><a href="#" class="text-sm">Discord</a></li>
+          <li><a href="#" class="text-sm">Telephone</a></li>
+          <li><a href="#" class="text-sm">Whatsapp</a></li>
+          <li><a href="#" class="text-sm">Email</a></li>
+        </ul>
+      </div>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

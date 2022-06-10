@@ -4,11 +4,31 @@ const tableBtn = document.querySelector('section.our_product ul li.table-btn');
 const bedBtn = document.querySelector('section.our_product ul li.bed-btn');
 const decorBtn = document.querySelector('section.our_product ul li.decor-btn');
 const productsWrapper = document.querySelector('section.our_product .products_wrapper');
+const screenW = window.outerWidth;
 
-const swiper = new Swiper(".mySwiper", {
+if(screenW >= 1280){
+  const swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 15,
   });
+}else if(screen >= 1024 ){
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 15,
+  });
+}else if(screenW >= 768){
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 15,
+  });
+}else if(screenW <= 768){
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+  });
+}
+
+
 
 allBtn.addEventListener('click',()=>{
     productsWrapper.innerHTML = `

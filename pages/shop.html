@@ -22,64 +22,66 @@
 
 </head>
 <body class="overflow-x-hidden">
-    <header class="w-full px-12 absolute top-0 left-0 z-10 bg-white">
-      <div class="secondary_menu w-full border-b-2 border-solid bordee-slate-300">
-        <ul class="w-full flex justify-between py-2">
-          <li>
-            <ul class="flex">
-               <li><a href="about.html" class="text-xs text-slate-500">ABOUT</li></a>
-               <li><a href="#contact" class="text-xs text-slate-500 ml-4">CONTACT</li></a>
-            </ul>
-          </li>
-          <li>
-            <ul class="flex">
-               <li><a href="sign-form.html" class="text-xs text-slate-500 pr-2">SIGNIN</a></li>
-               <li><a href="sign-form.html" class="text-xs text-slate-500 pl-2 border-l border-solid border-slate-300">SIGNUP</a></li>
-            </ul>
-          </li>
-        </ul> 
+  <header class="w-full lg:px-12 md:px-10 md:pt-5 px-4 pt-3 top-0 absolute left-0 z-10 bg-white">
+    <div class="secondary_menu w-full border-b border-solid border-slate-600">
+      <ul class="w-full flex justify-between py-2">
+        <li>
+          <ul class="flex">
+             <li><a href="pages/about.html" class="text-xs lg:text-xs  md:text-base text-slate-500">ABOUT</li></a>
+             <li><a href="#contact" class="text-xs lg:text-xs  md:text-base text-slate-500 ml-4">CONTACT</li></a>
+          </ul>
+        </li>
+        <li>
+          <ul class="flex">
+             <li><a href="/pages/sign-form.html" class="text-xs lg:text-xs  md:text-base text-slate-500 pr-2">SIGNIN</a></li>
+             <li><a href="/pages/sign-form.html" class="text-xs lg:text-xs  md:text-base text-slate-500 pl-2 border-l border-solid border-slate-700">SIGNUP</a></li>
+          </ul>
+        </li>
+      </ul> 
+    </div>
+    
+    <nav class="lg:py-7 py-4 flex justify-between items-center">
+      <div class="logo">
+        <a href="#" class="flex items-center">
+        <img src="../src/images/logo.png" class="md:w-10 w-6" alt="logo">
+        <p class="justify-self-end font-bold md:text-4xl  text-xl ml-1">ltar</p>
+        </a>
       </div>
-        
-        <nav class="py-7 flex justify-between items-center">
-          <div class="logo">
-            <a href="#" class="flex items-center">
-            <img src="../src/images/logo.png" width="45" alt="logo">
-            <p class="justify-self-end font-bold text-4xl ml-4">ltar</p>
-            </a>
-          </div>
+      
+      <div class="main_menu">
+        <ul class="flex">
+          <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 hidden lg:block md:block"><a href="#">HOME</a></li>
+          <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 hidden lg:block md:block"><a href="pages/shop.html">SHOP</a></li>
+          <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 hidden lg:block md:block"><a href="pages/forsale.html">FORSALE</a></li>
+          <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 lg:hidden md:hidden"><a href="pages/forsale.html">MENU</a></li>
           
-          <div class="main_menu">
-            <ul class="flex">
-              <li class="mx-4 text-sm text-slate-600"><a href="../index.html">HOME</a></li>
-              <li class="mx-4 text-sm text-slate-600"><a href="shop.html">SHOP</a></li>
-              <li class="mx-4 text-sm text-slate-600"><a href="forsale.html">FORSALE</a></li>
-            </ul>
+        </ul>
+      </div>
+      
+      <div class="user_cart md:w-32 w-30 flex justify-between items-center">
+        <img src="../src/images/heart.png" class="w-5 h-5 lg:w-5 lg:h-5 md:h-7 md:w-7" alt="heart">
+        <a href="pages/user-cart.html">
+          <div class="cart_icon flex items-center">
+            <img src="../src/images/shopping-cart.png" class="lg:w-4 lg:h-4 md:h-6 md:w-6 w-4 h-4" alt="cart">
+            <p class="text-sm mx-1">CART</p>
+            <div class="user_cart_total rounded-full bg-amber-500 w-5 h-5 lg:w-5 lg:h-5 md:h-7 md:w-7 flex items-center justify-center">
+              <p class="text-white text-xs">5</p>
+            </div>
           </div>
-          
-          <div class="user_cart w-32 flex justify-between items-center">
-            <img src="../src/images/heart.png" class="w-6 h-6" alt="heart">
-            <a href="user-cart.html">
-              <div class="cart_icon flex items-center">
-                <img src="../src/images/shopping-cart.png" class="w-5 h-5" alt="cart">
-                <p class="text-sm mx-1">CART</p>
-                <div class="user_cart_total rounded-full bg-amber-500 w-6 h-6 flex items-center justify-center">
-                  <p class="text-white text-xs">5</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </nav>
-    </header>
+        </a>
+      </div>
+    </nav>
+  </header>
 
     <section class="showcase relative w-full h-screen bg-slate-400 bg-orange-200">
         <img src="../src/images/sofa_showcase_bg.png" class="w-96 absolute bottom-0 left-1/2 -translate-x-1/2" alt="sofa">
-      <div class="text text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 zindex-1">
+      <div class="text w-full lg:w-auto text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 zindex-1">
         <h1 class="title text-slate-800 font-extrabold text-2xl text-center">Comfy Furniture for Your Home</h1>
         <p class="text-lg text-slate-800 mt-2">Discover the most beautiful furniture</p>
       </div>
     </section>
  
-    <section class="top_rated w-full px-12 my-28">
+    <section class="top_rated w-full lg:px-12 px-4 lg:my-28 my-12">
       <h1 class="font-bold text-2xl my-8">Top Rated Product</h1>
         <div class="swiper mySwiper w-full h-56">
           <div class="swiper-wrapper">
@@ -111,19 +113,19 @@
         </div>
     </section>
 
-    <section class="our_product w-full px-12 text-center">
+    <section class="our_product w-full md:px-12 px-6 text-center">
       <h1 class="text-left font-bold text-2xl mb-7">Our Product</h1>
-      <div class="product_navbar w-full flex justify-between ">
-        <ul class="flex w-80 justify-between">
+      <div class="product_navbar w-full flex-wrap flex justify-between ">
+        <ul class="flex md:w-80 md:flex-none flex-1 justify-between">
           <li class="all-btn hover:cursor-pointer">All product</li>
-          <li class="chair-btn hover:cursor-pointer">Chair</li>
-          <li class="table-btn hover:cursor-pointer">Table</li>
-          <li class="bed-btn hover:cursor-pointer">Bed</li>
-          <li class="decor-btn hover:cursor-pointer">Decorative</li>
+          <li class="chair-btn hidden md:block hover:cursor-pointer">Chair</li>
+          <li class="table-btn hidden md:block hover:cursor-pointer">Table</li>
+          <li class="bed-btn hidden md:block hover:cursor-pointer">Bed</li>
+          <li class="decor-btn hidden md:block hover:cursor-pointer">Decorative</li>
         </ul>
         <button>Filter</button>
       </div>
-      <div class="products_wrapper my-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
+      <div class="products_wrapper md:my-16 my-12 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
         <div class="item h-96 w-full  overflow-hidden">
           <div class="thumb relative w-full h-5/6 bg-slate-200">
             <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover ">
@@ -320,7 +322,7 @@
       <button class="text-sm py-1 px-2 border border-solid border-slate-700">view more</button>
     </section>
 
-    <section class="category w-full px-12 my-28">
+    <section class="category w-full md:px-12 px-6 my-28">
       <h1 class="font-bold text-2xl my-8">Top Category</h1>
         <div class="swiper mySwiper w-full h-56">
           <div class="swiper-wrapper">
@@ -352,9 +354,9 @@
         </div>
     </section>
 
-    <section class=" w-full px-12 my-24">
-      <div class="container flex h-80 bg-slate-200">
-        <div class="left-text w-1/2 flex flex-col items-center justify-center">
+    <section class=" w-full md:px-12 px-6 my-24">
+      <div class="container flex md:flex-row flex-col h-80 bg-slate-200">
+        <div class="left-text md:w-1/2 md:flex-none flex-1 w-full flex flex-col items-center justify-center">
           <h1 class="text-4xl font-bold">Discounted</h1>
           <p class="text-lg tracking-widest">Wonder sofa</p>
           <div class="h-12 w-20 gap-3 text-center discounted_persen grid grid-cols-2 grid-rows-3 items-center">
@@ -364,51 +366,33 @@
             <p class="col-start-1 col-end-3 row-start-3 row-end-4 text-xl text-left font-bold ">On Sale</p>
           </div>
         </div>
-        <div class="image w-1/2 flex items-center justify-center border-l border-slate-400 border-solid">
+        <div class="image md:w-1/2 md:flex-none flex-1 w-full flex items-center justify-center md:border-l md:border-slate-400 md:border-solid">
         <img src="../src/images/sofa_showcase_bg.png" class="w-3/4" alt="">
       </div>
       </div>
     </section>
 
-    <section class="latest_product px-12">
-      <h1 class="text-left font-bold text-2xl mb-7">Newest added Product</h1>
-      <div class="products_wrapper grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-3">
-        <div class="item h-64 w-full bg-slate-200 min-w-min relative">
-          <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover">
-          <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm py-2 px-3 border border-solid border-slate-700">view product</button>
-        </div>
-        <div class="item h-64 w-full bg-slate-200 min-w-min relative">
-          <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover">
-          <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm py-2 px-3 border border-solid border-slate-700">view product</button>
-        </div>
-        <div class="item h-64 w-full bg-slate-200 min-w-min relative">
-          <img src="../src/images/floor_lamp.png" alt="" class="w-full h-full object-cover">
-          <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm py-2 px-3 border border-solid border-slate-700">view product</button>
-        </div>
-      </div>
-    </section>
-
-    <footer class="grid grid-cols-4 gap-x-6 m-12 pl-40">
-      <div class="subs ml-auto">
-        <h1 class="font-bold text-slate-700 mb-4">Subscribe</h1>
+    <footer class="grid lg:grid-cols-4 md:text-center grid-cols-2 gap-x-6 gap-y-6 lg:gap-y-0 m-6">
+      <div class="subs col-span-2 md:col-span-1 ml-auto flex flex-col">
+        <h1 class="font-bold  text-slate-700 mb-4" >Subscribe</h1>
         <p class="text-sm">Subscribe to our newsletter to be the first to hear about new arrivals, sales and special offers!</p>
         <input type="email" class="border-solid border text-sm border-slate-700 rounded mt-4 py-2 px-4 " placeholder="Enter your email">
-        <button class="rounded text-xs font-bold border border-slate-700 text-slate-700 border-solid hover:bg-orange-100 py-2 px-4 my-3">Send</button>
+        <button class="rounded text-xs font-bold border border-solid bg-orange-100  text-orange-800 py-2 px-4 my-3">Send</button>
       </div>
-      <div class="menu mx-auto">
-        <h1 class="font-bold text-slate-700 mb-4">Menu</h1>
+      <div class="menu lg:mx-auto md:text-center md:mx-0 mr-auto">
+        <h1 class="font-bold text-slate-700 mb-4" >Menu</h1>
         <ul>
-          <li><a href="../index.html" class="text-sm">Home</a></li>
-          <li><a href="shop.html" class="text-sm">Shop</a></li>
+          <li><a href="#" class="text-sm">Home</a></li>
+          <li><a href="pages/shop.html" class="text-sm">Shop</a></li>
           <li><a href="#" class="text-sm">Forsale</a></li>
-          <li><a href="about.html" class="text-sm">About</a></li>
+          <li><a href="pages/about.html" class="text-sm">About</a></li>
           <li><a href="#contact" class="text-sm">Contact</a></li>
-          <li><a href="sign-form.html" class="text-sm">Signin</a></li>
-          <li><a href="sign-form.html" class="text-sm">Signup</a></li>
+          <li><a href="pages/sign-form.html" class="text-sm">Signin</a></li>
+          <li><a href="pages/sign-form.html" class="text-sm">Signup</a></li>
         </ul>
       </div>
-      <div class="info mx-auto">
-        <h1 class="font-bold text-slate-700 mb-4">Information</h1>
+      <div class="info lg:mr-auto md:text-center md:mx-0 ml-auto">
+        <h1 class="font-bold text-slate-700 mb-4" >Information</h1>
         <ul>
           <li><a href="#" class="text-sm">About Us</a></li>
           <li><a href="#" class="text-sm">Terms & Conditions</a></li>
@@ -416,8 +400,8 @@
           <li><a href="#" class="text-sm">Support Center</a></li>
         </ul>
       </div>
-      <div class="social_media mr-auto" id="contact">
-        <h1 class="font-bold text-slate-700 mb-4">Social Media</h1>
+      <div class="social_media lg:mx-auto md:text-center md:mx-0 mr-auto " id="contact">
+        <h1 class="font-bold text-slate-700 mb-4" >Social Media</h1>
         <ul>
           <li><a href="#" class="text-sm">Twitter</a></li>
           <li><a href="#" class="text-sm">Facebook</a></li>
@@ -429,7 +413,6 @@
         </ul>
       </div>
     </footer>
-   
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

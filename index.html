@@ -19,47 +19,49 @@
 
 <body class="overflow-x-hidden">
   
- <header class="w-full px-12 absolute top-0 left-0 z-10 bg-white">
-  <div class="secondary_menu w-full border-b-2 border-solid bordee-slate-300">
+<header class="w-full lg:px-12 md:px-10 md:pt-5 px-4 pt-3 absolute top-0 left-0 z-10 bg-white">
+  <div class="secondary_menu w-full border-b-2 border-solid border-slate-600">
     <ul class="w-full flex justify-between py-2">
       <li>
         <ul class="flex">
-           <li><a href="pages/about.html" class="text-xs text-slate-500">ABOUT</li></a>
-           <li><a href="#contact" class="text-xs text-slate-500 ml-4">CONTACT</li></a>
+           <li><a href="pages/about.html" class="text-xs lg:text-xs  md:text-base text-slate-500">ABOUT</li></a>
+           <li><a href="#contact" class="text-xs lg:text-xs  md:text-base text-slate-500 ml-4">CONTACT</li></a>
         </ul>
       </li>
       <li>
         <ul class="flex">
-           <li><a href="/pages/sign-form.html" class="text-xs text-slate-500 pr-2">SIGNIN</a></li>
-           <li><a href="/pages/sign-form.html" class="text-xs text-slate-500 pl-2 border-l border-solid border-slate-300">SIGNUP</a></li>
+           <li><a href="/pages/sign-form.html" class="text-xs lg:text-xs  md:text-base text-slate-500 pr-2">SIGNIN</a></li>
+           <li><a href="/pages/sign-form.html" class="text-xs lg:text-xs  md:text-base text-slate-500 pl-2 border-l border-solid border-slate-300">SIGNUP</a></li>
         </ul>
       </li>
     </ul> 
   </div>
   
-  <nav class="py-7 flex justify-between items-center">
+  <nav class="lg:py-7 py-4 flex justify-between items-center">
     <div class="logo">
       <a href="#" class="flex items-center">
-      <img src="src/images/logo.png" width="45" alt="logo">
-      <p class="justify-self-end font-bold text-4xl ml-4">ltar</p>
+      <img src="src/images/logo.png" class="md:w-10 w-6" alt="logo">
+      <p class="justify-self-end font-bold md:text-4xl  text-xl ml-1">ltar</p>
       </a>
     </div>
     
     <div class="main_menu">
       <ul class="flex">
-        <li class="mx-4 text-sm text-slate-600"><a href="#">HOME</a></li>
-        <li class="mx-4 text-sm text-slate-600"><a href="pages/shop.html">SHOP</a></li>
-        <li class="mx-4 text-sm text-slate-600"><a href="pages/forsale.html">FORSALE</a></li>
+        <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 hidden lg:block md:block"><a href="#">HOME</a></li>
+        <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 hidden lg:block md:block"><a href="pages/shop.html">SHOP</a></li>
+        <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 hidden lg:block md:block"><a href="pages/forsale.html">FORSALE</a></li>
+        <li class="mx-4 text-sm lg:text-sm md:text-lg text-slate-600 lg:hidden md:hidden"><a href="pages/forsale.html">MENU</a></li>
+        
       </ul>
     </div>
     
-    <div class="user_cart w-32 flex justify-between items-center">
-      <img src="src/images/heart.png" class="w-6 h-6" alt="heart">
+    <div class="user_cart md:w-32 w-30 flex justify-between items-center">
+      <img src="src/images/heart.png" class="w-5 h-5 lg:w-5 lg:h-5 md:h-7 md:w-7" alt="heart">
       <a href="pages/user-cart.html">
         <div class="cart_icon flex items-center">
-          <img src="src/images/shopping-cart.png" class="w-5 h-5" alt="cart">
+          <img src="src/images/shopping-cart.png" class="lg:w-4 lg:h-4 md:h-6 md:w-6 w-4 h-4" alt="cart">
           <p class="text-sm mx-1">CART</p>
-          <div class="user_cart_total rounded-full bg-amber-500 w-6 h-6 flex items-center justify-center">
+          <div class="user_cart_total rounded-full bg-amber-500 w-5 h-5 lg:w-5 lg:h-5 md:h-7 md:w-7 flex items-center justify-center">
             <p class="text-white text-xs">5</p>
           </div>
         </div>
@@ -69,55 +71,55 @@
 </header>
 
 <section class="showcase relative w-full h-screen bg-slate-400">
-    <div class="left-side absolute w-1/2 h-full bg-orange-200 top-0 left-0"></div>
-    <div class="right-side absolute w-1/2 h-full bg-orange-100 top-0 left-1/2"></div>
-    <img src="src/images/table_showcase_bg.png" class="w-24 absolute bottom-0 left-1/4 -translate-x-1/2" alt="table">
-    <img src="src/images/lamp_showcase_bg.png" class="w-24 absolute top-0 left-1/4 -translate-x-1/2" alt="lamp">
-    <img src="src/images/sofa_showcase_bg.png" class="w-80 absolute bottom-0 left-3/4 -translate-x-1/2" alt="sofa">
-  <div class="text text-center absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 zindex-1">
+    <div class="left-side absolute lg:w-1/2 w-full h-full bg-orange-200 top-0 left-0"></div>
+    <div class="right-side hidden lg:block absolute w-1/2 h-full bg-orange-100 top-0 left-1/2"></div>
+    <img src="src/images/table_showcase_bg.png" class="w-24 lg:block hidden absolute bottom-0 left-1/4 -translate-x-1/2" alt="table">
+    <img src="src/images/lamp_showcase_bg.png" class="w-24 lg:block hidden absolute top-0 left-1/4 -translate-x-1/2" alt="lamp">
+    <img src="src/images/sofa_showcase_bg.png" class="w-80 absolute bottom-0 lg:left-3/4 left-1/2 -translate-x-1/2" alt="sofa">
+  <div class="text text-center w-5/6  absolute lg:top-2/3 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 zindex-1">
     <h1 class="title text-slate-700 font-extrabold text-2xl text-center">Comfy Furniture for Your Home</h1>
     <p class="text-lg text-slate-700 mt-2 mb-10">Discover the most beautiful furniture</p>
     <a href="pages/shop.html" class="text-sm font-bold text-orange-800 bg-white py-2 px-3 rounded-full">Shop Now ></a>
   </div>
 </section>
 
-<section class="best_selling h-96 flex py-8 my-12">
-  <div class="produc_desc w-1/2 text-center">
+<section class="best_selling lg:h-96 h-screen flex lg:flex-row flex-col-reverse lg:py-8 md:my-12">
+  <div class="produc_desc flex-1 lg:block flex flex-col justify-center items-center lg:w-1/2 w-full text-center">
     <h2 class="text-orange-800 font-bold text-sm">Best Selling</h2>
     <h1 class="text-slate-700 font-extrabold text-2xl my-4">White pale vase</h1>
-    <p class="w-3/4 text-sm text-slate-700 m-auto">This vase has been sold for over 130 in year making this thing as the most wanted vase in our store, this vase is made by an artist based on canada with experience in this field for over 5 year since he start to make vase in 2007, with the cheap price and high quality product you will not disapointed for buying this vase</p>
+    <p class="w-3/4 text-sm text-slate-700 lg:m-auto m-3">This vase has been sold for over 130 in year making this thing as the most wanted vase in our store, this vase is made by an artist based on canada with experience in this field for over 5 year since he start to make vase in 2007, with the cheap price and high quality product you will not disapointed for buying this vase</p>
     <p class="font-extrabold text-slate-700 my-4">$110</p>
     <button class="rounded text-xs font-bold  text-orange-800 bg-orange-200 py-2 px-4">Buy Now</button>
   </div>
-  <figure class="flex-1 flex items-center justify-center h-full ">
-    <div class="img_wrapper w-1/2 h-full flex items-center justify-center margin-auto rounded-b-full bg-orange-200" >
-      <img src="src/images/white_pale_vase.png" class="h-64 " alt="white vase">      
+  <figure class="flex-1 flex items-center justify-center lg:h-full h-auto">
+    <div class="img_wrapper lg:w-1/2 md:h-full w-5/6 h-4/5 flex items-center justify-center margin-auto rounded-b-full bg-orange-200" >
+      <img src="src/images/white_pale_vase.png" class="h-48 lg:h-48 md:h-80 " alt="white vase">      
     </div>
   </figure>
 </section>
 
-<section class="for_you h-96 flex py-8 ">
-  <figure class="flex-1 flex items-center justify-center h-full ">
-    <div class="img_wrapper w-1/2 h-full flex items-center justify-center margin-auto rounded-t-full bg-orange-100" >
-      <img src="src/images/floor_lamp.png" class="h-64 " alt="white vase">      
+<section class="for_you lg:h-96 h-screen  flex lg:flex-row flex-col lg:py-8 lg:my-12 ">
+  <figure class="flex-1 flex items-center justify-center h-full h-auto">
+    <div class="img_wrapper lg:w-1/2 md:h-full w-4/5 h-4/5 flex items-center justify-center margin-auto rounded-t-full bg-orange-100" >
+      <img src="src/images/floor_lamp.png" class="h-44 lg:h-44 md:h-96 " alt="white vase">      
     </div>
   </figure>
-  <div class="produc_desc w-1/2 text-center">
+  <div class="produc_desc flex-1 lg:block flex flex-col justify-center items-center lg:w-1/2 w-full text-center">
     <h2 class="text-orange-800 font-bold text-sm">For Your Things</h2>
     <h1 class="text-slate-700 font-extrabold text-2xl my-4">Floor Lamp</h1>
-    <p class="w-3/4 text-sm text-slate-700 m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nam, animi omnis voluptas saepe amet expedita at qui sit facilis reiciendis ratione? Quis, animi nam. Doloribus recusandae ipsum dicta quas optio debitis at quibusdam rerum a accusamus!</p>
+    <p class="w-3/4 text-sm text-slate-700 lg:m-auto m-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nam, animi omnis voluptas saepe amet expedita at qui sit facilis reiciendis ratione? Quis, animi nam. Doloribus recusandae ipsum dicta quas optio debitis at quibusdam rerum a accusamus!</p>
     <p class="font-extrabold text-slate-700 my-4">$50</p>
     <button class="rounded text-xs font-bold  text-orange-800 bg-orange-100 py-2 px-4">Buy Now</button>
   </div>
 </section>
 
-<section class="home_decor px-12 text-center">
+<section class="home_decor lg:px-12 px-6 text-center">
   <h1 class="text-orange-800 text-normal font-bold text-center my-4">Modern Home Decor Essentials</h1>
-  <p class="text-sm font-normal text-slate-700 text-center w-3/4 mb-10 mx-auto">Lorem ipsum iat optio totam mollitia atque dignissimos eos quaerat, nulla reiciendis, in explicabo facere cupiditate facilis eligendi quibusdam amet, commodi hic iste! Assumenda!</p>
-  <div class="grid grid_wrapper grid-cols-4 grid-rows-2 gap-2 justify-content-center">
+  <p class="text-sm font-normal text-slate-700 text-center lg:w-3/4 w-full mb-10 mx-auto">Lorem ipsum iat optio totam mollitia atque dignissimos eos quaerat, nulla reiciendis, in explicabo facere cupiditate facilis eligendi quibusdam amet, commodi hic iste! Assumenda!</p>
+  <div class="grid grid_wrapper lg:grid-cols-4 md:grid-cols-2 grid-cols-1 grid-rows-2 gap-2 justify-content-center">
     <div class="card bg-orange-100 flex items-center justify-center h-96 w-full">
       <div class="card_item flex flex-col text-center w-3/4 h-3/4">
-        <img src="src/images/black_vase_decor.png" class="w-20 m-auto" alt="">
+        <img src="src/images/black_vase_decor.png" class="h-1/2 m-auto" alt="">
         <h3 class="mt-4">Vase bunga gelap</h3>
         <h4 class="my-3">$40</h4>
         <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
@@ -125,7 +127,7 @@
     </div>
     <div class="card bg-orange-100 flex items-center justify-center h-96 w-full">
       <div class="card_item flex flex-col text-center w-3/4 h-3/4">
-        <img src="src/images/flamingo_decor.png" class="w-20 m-auto" alt="">
+        <img src="src/images/flamingo_decor.png" class="h-1/2 m-auto" alt="">
         <h3 class="mt-4">Flamingo Statue</h3>
         <h4 class="my-3">$70</h4>
         <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
@@ -141,15 +143,15 @@
     </div>
     <div class="card bg-orange-100 flex items-center justify-center h-96 w-full">
       <div class="card_item flex flex-col text-center w-3/4 h-3/4">
-        <img src="src/images/plant_decor.png" class="w-20 m-auto" alt="">
+        <img src="src/images/plant_decor.png" class="h-1/2 m-auto" alt="">
         <h3 class="mt-4">Plant</h3>
         <h4 class="my-3">$43</h4>
         <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
       </div>
     </div>
-    <div class="card bg-orange-100 flex items-center justify-center h-96 w-full col-span-2">
+    <div class="card bg-orange-100 flex items-center justify-center h-96 w-full md:col-span-2">
     <div class="card_item flex flex-col text-center w-3/4 h-3/4">
-      <img src="src/images/table_decor.png" class="w-45 m-auto" alt="">
+      <img src="src/images/table_decor.png" class="h-1/2 m-auto" alt="">
       <h3 class="mt-4">Table decoration</h3>
       <h4 class="my-3">$210</h4>
       <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
@@ -157,7 +159,7 @@
     </div>
     <div class="card bg-orange-100 flex items-center justify-center h-96 w-full">
       <div class="card_item flex flex-col text-center w-3/4 h-3/4">
-        <img src="src/images/vase_decor.png" class="w-20 m-auto" alt="">
+        <img src="src/images/vase_decor.png" class="h-1/2 m-auto" alt="">
         <h3 class="mt-4">Vase Dengan Motif</h3>
         <h4 class="my-3">$221</h4>
         <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
@@ -165,7 +167,7 @@
     </div>
     <div class="card bg-orange-100 flex items-center justify-center h-96">
       <div class="card_item flex flex-col text-center w-3/4 h-3/4">
-        <img src="src/images/welcome_home_decor.png" class="w-20 m-auto" alt="">
+        <img src="src/images/welcome_home_decor.png" class="h-1/2 m-auto" alt="">
         <h3 class="mt-4">Welcome Greetings</h3>
         <h4 class="my-3">$21</h4>
         <button class="font-bold text-xs bg-orange-800 py-2 px-4 rounded w-1/2 m-auto text-orange-200">Buy</button>
@@ -175,14 +177,14 @@
   <button class="rounded text-xs font-bold  text-orange-800 bg-orange-100 py-2 px-4 my-6">view all</button>
 </section>
   
-<footer class="grid grid-cols-4 gap-x-6 m-12">
-  <div class="subs ml-auto flex flex-col">
-    <h1 class="font-bold text-slate-700 mb-4" >Subscribe</h1>
+<footer class="grid lg:grid-cols-4 md:text-center grid-cols-2 gap-x-6 gap-y-6 lg:gap-y-0 m-6">
+  <div class="subs col-span-2 md:col-span-1 ml-auto flex flex-col">
+    <h1 class="font-bold  text-slate-700 mb-4" >Subscribe</h1>
     <p class="text-sm">Subscribe to our newsletter to be the first to hear about new arrivals, sales and special offers!</p>
     <input type="email" class="border-solid border text-sm border-slate-700 rounded mt-4 py-2 px-4 " placeholder="Enter your email">
     <button class="rounded text-xs font-bold border border-solid bg-orange-100  text-orange-800 py-2 px-4 my-3">Send</button>
   </div>
-  <div class="menu mx-auto">
+  <div class="menu lg:mx-auto md:text-center md:mx-0 mr-auto">
     <h1 class="font-bold text-slate-700 mb-4" >Menu</h1>
     <ul>
       <li><a href="#" class="text-sm">Home</a></li>
@@ -194,7 +196,7 @@
       <li><a href="pages/sign-form.html" class="text-sm">Signup</a></li>
     </ul>
   </div>
-  <div class="info mx-auto">
+  <div class="info lg:mr-auto md:text-center md:mx-0 ml-auto">
     <h1 class="font-bold text-slate-700 mb-4" >Information</h1>
     <ul>
       <li><a href="#" class="text-sm">About Us</a></li>
@@ -203,7 +205,7 @@
       <li><a href="#" class="text-sm">Support Center</a></li>
     </ul>
   </div>
-  <div class="social_media mr-auto" id="contact">
+  <div class="social_media lg:mx-auto md:text-center md:mx-0 mr-auto " id="contact">
     <h1 class="font-bold text-slate-700 mb-4" >Social Media</h1>
     <ul>
       <li><a href="#" class="text-sm">Twitter</a></li>
